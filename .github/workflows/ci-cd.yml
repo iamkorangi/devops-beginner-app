@@ -2,14 +2,14 @@ name: CI/CD Pipeline
 
 on: 
   push:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        users: actions/checkout@v4
+      - name: Check Out Code
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
