@@ -1,11 +1,11 @@
-From python:3.11-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
 COPY requirements.txt .
 run npm intall --no-cache-dir -r requirements.txt
 
-COPY ..
+COPY . .
 
 EXPOSE 5000
 
